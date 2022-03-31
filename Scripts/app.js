@@ -1,5 +1,5 @@
 /*
-  Editing Authors Tyler Henry & Tyler Osbonre
+  Editing Authors Tyler Henry (100593023) & Tyler Osbonre (100757532)
   Date: 2022-03-31
   Description Edits made to:
                             -Add task list to nav bar if logged in
