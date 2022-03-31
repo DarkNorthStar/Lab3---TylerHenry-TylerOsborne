@@ -1,3 +1,10 @@
+/*
+    Edit Authors: Tyler Henry & Tyler Osborne
+    Date: 2022-03-31
+    Description:
+                Edits made to:
+                             -Add task list to the routing table
+*/
 "use strict";
 
 (function (core) {
@@ -97,8 +104,10 @@ router.AddTable(["/",
                  "/register", 
                  "/login", 
                  "/edit",
-                 "/task-list"]);
-                
+/**********************************************************/
+                 //NEW STUFF HERE                    
+                 "/task-list"]); // Adds task list to routing table
+/**********************************************************/                
 let route = location.pathname; // alias for location.pathname
 
 if(router.Find(route) > -1)

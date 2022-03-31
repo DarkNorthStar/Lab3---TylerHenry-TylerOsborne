@@ -1,3 +1,11 @@
+/*
+  Editing Authors Tyler Henry & Tyler Osbonre
+  Date: 2022-03-31
+  Description Edits made to:
+                            -Add task list to nav bar if logged in
+                            -Stop users from accessing task list when not logged in
+                            -Setup Callback for task list    
+*/
 /* custom JavaScript goes here */
 
 //IIFE - Immediately Invoked Function Expression
@@ -21,7 +29,10 @@
         $("header").html(data); // load the navigation bar
 
         toggleLogin(); // add login / logout and secure links
-        toggleTaskList();
+//********************************************************************* */
+// NEW STUFF HERE         
+        toggleTaskList(); // Adds TaskList to nav if logged in
+//********************************************************************* */        
         $(`#${pageName}`).addClass("active"); // highlight active link
 
         // loop through each anchor tag in the unordered list and 
@@ -464,7 +475,10 @@
         case "login": return displayLogin;
         case "register": return displayRegister;
         case "404": return display404;
-        case "task-list": return DisplayTaskList;
+//********************************************************************* */        
+        // NEW STUFF HERE
+        case "task-list": return DisplayTaskList; // Adds call back for task list
+//********************************************************************* */        
         default:
           console.error("ERROR: callback does not exist: " + activeLink);
           break;
@@ -510,7 +524,10 @@
     function 
     DisplayTaskList()
     {
-        authGuard();
+//********************************************************************* */
+        // NEW STUFF HERE
+        authGuard(); // Makes sure that someones logged in to view page
+//********************************************************************* */
         let messageArea = $("#messageArea");
         messageArea.hide();
         let taskInput = $("#taskTextInput");
