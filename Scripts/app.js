@@ -74,7 +74,7 @@
 
     function displayHome()
     {
-        
+      
     }
 
     function displayAbout()
@@ -507,7 +507,8 @@
      * This function is the Callback function for the TaskList
      *
      */
-    function DisplayTaskList()
+    function 
+    DisplayTaskList()
     {
         authGuard();
         let messageArea = $("#messageArea");
