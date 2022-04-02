@@ -425,7 +425,7 @@
           sessionStorage.clear();
 
           // redirect back to login
-          location.href = "/login";
+          location.href = "/Lab3---TylerHenry-TylerOsborne/index";
         });
 
         // make it look like each nav item is an active link
