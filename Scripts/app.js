@@ -397,21 +397,21 @@
               <a id="task-list" class="nav-link" aria-current="page"><i class="fas fa-users fa-lg"></i> Task List</a>
             </li>`).insertBefore("#loginListItem");
       
-              $("#tasklist").on("click", function()
+              $("#task-list").on("click", function()
               {
                 // redirect to task list
                 location.href = "/task-list";
               });
       
               // make it look like each nav item is an active link
-              $("#tasklist").on("mouseover", function()
+              $("#task-list").on("mouseover", function()
               {
                 $(this).css('cursor', 'pointer');
               });
              
               $(`<li class="nav-item">
               <a id="contact-list" class="nav-link" aria-current="page"><i class="fas fa-users fa-lg"></i> Contact List</a>
-            </li>`).insertBefore("#tasklist");
+            </li>`).insertBefore("#task-list");
 
             }
     }
