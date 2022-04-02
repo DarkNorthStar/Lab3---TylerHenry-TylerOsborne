@@ -339,7 +339,7 @@
           messageArea.removeAttr("class").hide();
 
           // redirect user to secure area - contact-list.html
-          location.href = "/task-list";
+          location.href = "/Lab3---TylerHenry-TylerOsborne/index";
         }
         else
         {
