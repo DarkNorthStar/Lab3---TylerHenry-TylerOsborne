@@ -392,8 +392,9 @@
               //`<a id="tasklist" class="nav-link" aria-current="page"><i class="fas fa-sign-out-alt"></i> Task List</a>`
               //).insertBefore("#tasklistItem");
 
+              // Adds the task list link to the nav
               $(`<li class="nav-item">
-              <a id="tasklist" class="nav-link" aria-current="page"><i class="fas fa-users fa-lg"></i> Task List</a>
+              <a id="task-list" class="nav-link" aria-current="page"><i class="fas fa-users fa-lg"></i> Task List</a>
             </li>`).insertBefore("#loginListItem");
       
               $("#tasklist").on("click", function()
