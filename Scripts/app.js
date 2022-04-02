@@ -390,7 +390,7 @@
               // swap out the login link for logout
               $("#tasklistItem").html(
               `<a id="tasklist" class="nav-link" aria-current="page"><i class="fas fa-sign-out-alt"></i> Task List</a>`
-              );
+              ).insertBefore("#tasklistItem");
       
               $("#tasklist").on("click", function()
               {
@@ -407,6 +407,7 @@
               $(`<li class="nav-item">
               <a id="contact-list" class="nav-link" aria-current="page"><i class="fas fa-users fa-lg"></i> Contact List</a>
             </li>`).insertBefore("#tasklistItem");
+
             }
     }
     function toggleLogin()
