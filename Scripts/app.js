@@ -397,11 +397,7 @@
               <a id="task-list" class="nav-link" aria-current="page"><i class="fas fa-users fa-lg"></i> Task List</a>
             </li>`).insertBefore("#loginListItem");
       
-              $("#task-list").on("click", function()
-              {
-                // redirect to task list
-                location.href = "/task-list";
-              });
+              
       
               // make it look like each nav item is an active link
               $("#task-list").on("mouseover", function()
