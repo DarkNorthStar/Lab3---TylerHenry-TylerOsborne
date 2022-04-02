@@ -388,9 +388,13 @@
             if(sessionStorage.getItem("user"))
             {
               // swap out the login link for logout
-              $("#tasklistItem").html(
-              `<a id="tasklist" class="nav-link" aria-current="page"><i class="fas fa-sign-out-alt"></i> Task List</a>`
-              ).insertBefore("#tasklistItem");
+              //$("#tasklistItem").html(
+              //`<a id="tasklist" class="nav-link" aria-current="page"><i class="fas fa-sign-out-alt"></i> Task List</a>`
+              //).insertBefore("#tasklistItem");
+
+              $(`<li class="nav-item">
+              <a id="tasklist" class="nav-link" aria-current="page"><i class="fas fa-users fa-lg"></i> Task List</a>
+            </li>`).insertBefore("#tasklistItem");
       
               $("#tasklist").on("click", function()
               {
